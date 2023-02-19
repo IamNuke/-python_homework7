@@ -1,8 +1,9 @@
 def num_of_vocals(p_string, v_string):
     count = 0
     for letter in p_string:
-        count += v_string.count(letter)
+        count += 0 if v_string.find(letter) == -1 else 1
     return count
+
 
 my_string = input("Введите стихотворение (на русском алфавите): ")
 # my_string = "пара-ра-рам рам-пам-папам па-ра-па-да"
